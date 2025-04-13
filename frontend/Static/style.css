@@ -1,0 +1,27 @@
+.chat-container {
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom right, #f0fdf4, #dcfce7);
+}
+
+@media (max-width: 640px) {
+    .chat-container {
+        background-image: none;
+        background-color: #f7fee7;
+    }
+}
+
+.message-enter-active {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
